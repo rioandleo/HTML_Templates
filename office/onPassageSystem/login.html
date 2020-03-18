@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/semantic.css">
+    <style>
+        body {
+            background-color: #cccccc;
+            background-image: url("images/star_sky.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .ui.inverted.segment {
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ui.inverted.form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui container">
+        <div class="ui inverted segment" style="background-color: rgba(16,31,48,0.8)">
+            <h2 class="ui center aligned icon header">
+                <!-- 提示框 -->
+                <div data-tooltip="© 遵义电信综合服务支撑中心-监控组 & HaiZ" data-inverted="">
+                    <i class="user circle icon"></i>
+                </div>
+                i tell you
+            </h2>
+            <h5 class="ui horizontal divider grey sub header">© 遵义电信综合服务支撑中心-监控组</h5>
+            <form class="ui inverted form" method="post">
+                <div class="field">
+                    <label>用户名</label>
+                    <input type="text" placeholder="分配给你的账号">
+                </div>
+                <div class="field">
+                    <label>密码</label>
+                    <input type="text" placeholder="6位以上的密码">
+                </div>
+                <button type="submit" class="ui submit basic primary inverted fluid button"
+                    style="margin-top: 30px">登录</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

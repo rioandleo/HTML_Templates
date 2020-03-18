@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/obstacles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>监控系统首页</title>
+</head>
+
+<body>
+<div id="_sidebar">
+    <!--这里是网页主体部分-->
+    <div class="ui left sidebar inverted vertical bounceInLeft menu" v-bind:class="classtop" >
+        <a class="item">
+            1
+        </a>
+        <a class="item">
+            2
+        </a>
+        <a class="item">
+            3
+        </a>
+    </div>
+
+    <div class="pusher" v-bind:class="classpush">
+        <!-- Site content !-->
+
+        <div class="ui vertical basic segment masthead">
+            <div class="ui mini secondary pointing menu">
+                <a class="active item" id="demo" v-on:click="showmenu">
+                    <img src="images/logo.png" alt="logo">
+                    菜单
+                </a>
+                <div class="ui item">
+                    <h4 class="ui blue header">末梢系统在途障碍数据概览</h4>
+                </div>
+                <div class="right menu">
+                    <div class="ui item">
+                        张海
+                    </div>
+                    <a class="ui item" href="#">
+                        退出
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!--这里是内容区的上行-->
+            <div class="ui vertical basic segment ball">
+                <div class="ui four column grid container">
+                    <div class="column ball">
+                        <div class="ui secondary circular segment">
+                            <h2 class="ui header">
+                                政企
+                                <div class="sub header ball" style="margin-top: 20px">2 张</div>
+                            </h2>
+                            <div class="ui link list">
+                                <a class="item" style="color: darkred">当日修16点前：12张</a>
+                                <a class="item" style="color: darkred">当日修16点后：12张</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ball">
+                        <div class="ui secondary circular segment">
+                            <h2 class="ui header">
+                                公客
+                                <div class="sub header ball" style="margin-top: 20px">2 张</div>
+                            </h2>
+                            <div class="ui link list">
+                                <a class="item" style="color: #922032">当日修16点前：12张</a>
+                                <a class="item" style="color: #922032">当日修16点后：12张</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ball">
+                        <div class="ui secondary circular segment">
+                            <h2 class="ui header">
+                                重复
+                                <div class="sub header ball" style="margin-top: 20px">2 张</div>
+                            </h2>
+                            <div class="ui link list">
+                                <a class="item" style="color: #bb3300">责任人排序</a>
+                                <a class="item" style="color: #bb3300">催修：12张</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ball">
+                        <div class="ui secondary circular segment">
+                            <h2 class="ui header">
+                                超时
+                                <div class="sub header ball" style="margin-top: 20px">2 张</div>
+                            </h2>
+                            <div class="ui link list">
+                                <a class="item" style="color: #166abc">超时24小时：12张</a>
+                                <a class="item" style="color: #166abc">超时48小时：12张</a>
+                                <a class="item" style="color: #166abc">超时72小时：12张</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui vertical basic segment">
+                <div class="ui two column grid container">
+                    <div class="column">
+                        <div class="ui vertical grey segment">
+                            <table class="ui celled striped very compact table">
+                                <thead>
+                                <tr>
+                                    <th colspan="4">
+                                        最近3个月历时数据
+                                    </th>
+                                </tr>
+                                <tr style="">
+                                    <th colspan="1" class="four wide">
+                                        重复 TOP6
+                                    </th>
+                                    <th colspan="1" class="four wide">
+                                        超时 TOP6
+                                    </th>
+                                    <th colspan="1" class="four wide">
+                                        政企超时 TOP6
+                                    </th>
+                                    <th colspan="1" class="four wide">
+                                        公客超时 TOP6
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="collapsing">
+                                        <i class="folder icon"></i> node_modules
+                                    </td>
+                                    <td>Initial commit</td>
+                                    <td class="collapsing">10 hours ago</td>
+                                    <td class="collapsing">10 hours ago</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="ui vertical grey segment">
+                            <table class="ui celled striped very compact table">
+                                <thead>
+                                <tr>
+                                    <th colspan="3">
+                                        在途区域宽带障碍监控
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="1">
+                                        局站名
+                                    </th>
+                                    <th colspan="1" class="two wide">
+                                        障碍数
+                                    </th>
+                                    <th colspan="1" class="two wide">
+                                        拦截否
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="collapsing">
+                                        <i class="folder icon"></i> node_modules
+                                    </td>
+                                    <td>12</td>
+                                    <td class="collapsing">是</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="ui celled striped very compact table">
+                                <thead>
+                                <tr>
+                                    <th colspan="1">
+                                        障碍归属人
+                                    </th>
+                                    <th colspan="1" class="two wide">
+                                        障碍数
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="collapsing">
+                                        <i class="folder icon"></i> node_modules
+                                    </td>
+                                    <td>12</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

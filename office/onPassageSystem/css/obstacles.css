@@ -1,0 +1,31 @@
+.ui.vertical.basic.segment.ball {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.column.ball {
+    position: relative;
+}
+
+.ui.secondary.circular.segment {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ui.vertical.basic.segment.ball > .ui.four.column.grid.container {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.ui.link.list {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
